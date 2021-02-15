@@ -6,7 +6,7 @@ with open('README.md', 'r', encoding='utf-8') as fh:
 
 setuptools.setup(
     name='tpnetwork',
-    version='1.1.0',
+    version='1.1.1',
     author='Thomas Pajon',
     author_email='th.pajon45@gmail.com',
     description='A python network module',
