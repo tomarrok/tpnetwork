@@ -13,3 +13,11 @@ class NetmaskValueError(ValueError):
         super().__init__(self._message)
     def __str__(self):
         return f'{self._message} : {self._netmask}'
+
+class NetworkValueError(ValueError):
+    def __init__(self, network, message='bad ipv4 network value'):
+        self._network = network
+        self._message = message
+        super().__init__(self._message)
+    def __str__(self):
+        return f'{self._message} : {self._network}'
