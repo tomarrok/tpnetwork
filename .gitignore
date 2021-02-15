@@ -1,5 +1,7 @@
 __pycache__/
 __pycache__/*
+tests/
+tests/*
 test.py
 dist/
 build/
