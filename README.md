@@ -11,7 +11,7 @@ A python network module
 ## Documentation
 
 tpnetwork module is separated in severals sub-modules to manage all your network devices.
-More information on [this page](https://github.com/tomarrok/tpnetwork/wiki)
+More information on [this page](https://github.com/tomarrok/tpnetwork/wiki).
 
 ### sub-modules
 - network (main)
