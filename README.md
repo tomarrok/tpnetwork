@@ -13,7 +13,7 @@ A python network module
 
 tpnetwork module is separated in severals sub-modules to manage all your network devices.
 
-- network (main) : [more...](https://github.com/tomarrok/tpnetwork/blob/main/docs/network.md)
+- network (main) : [more...](https://github.com/tomarrok/tpnetwork/tree/main/tpnetwork/network)
 - fortinet : <em>In progress</em>
 
 ## Install
