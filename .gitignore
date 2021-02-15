@@ -3,6 +3,4 @@ __pycache__/*
 test.py
 dist/
 build/
-dist/*
-build/*
-tpnetwork.egg*
+tpnetwork.egg-info/
