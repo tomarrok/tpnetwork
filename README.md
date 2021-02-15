@@ -10,6 +10,10 @@
 A python network module
 
 ## Install
-`pip3 install tpnetwork`
+```
+sudo apt install python3-pip
+pip3 install tpnetwork
+```
 
 ### Requires:
+- Python : `v3.5+`
