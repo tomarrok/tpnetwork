@@ -7,3 +7,6 @@
 ![PyPI - License](https://img.shields.io/pypi/l/tpnetwork)
 
 A python network module
+
+## Install
+`pip3 install tpnetwork`
