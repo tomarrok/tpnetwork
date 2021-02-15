@@ -1,2 +1,8 @@
 __pycache__/
+__pycache__/*
 test.py
+dist/
+build/
+dist/*
+build/*
+tpnetwork.egg*
