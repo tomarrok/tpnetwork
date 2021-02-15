@@ -89,10 +89,9 @@ class IPv4Network:
         :rtype broadcast: IPv4Address
         '''
         netaddr_bin = self.__binary__()
-        net_prefix_index = self._cidr
 
-        network_bin = netaddr_bin[0][:net_prefix_index] + '0' * (32 - net_prefix_index)
-        broadcast_bin = netaddr_bin[0][:net_prefix_index] + '1' * (32 - net_prefix_index)
+        network_bin = netaddr_bin[0][:self._cidr] + '0' * (32 - self._cidr)
+        broadcast_bin = netaddr_bin[0][:self._cidr] + '1' * (32 - self._cidr)
         first_addr_bin = network_bin[:-1] + '1'
         last_addr_bin = broadcast_bin[:-1] + '0'
         
@@ -102,6 +101,31 @@ class IPv4Network:
             'last': binary_to_ipv4(last_addr_bin),
             'broadcast': binary_to_ipv4(broadcast_bin)
             }
+    
+    def is_address_included(self, address):
+        '''
+        Verify if an IPv4 address is included in IPv4 network address
+
+        :param address: An IPv4 address
+        :type address: IPv4Address
+        :return: Verification status
+        :rtype: bool
+
+        :Example:
+        >>> IPv4Network('192.168.0.1/24').is_address_included(IPv4Address('192.168.0.5'))
+        True
+        >>> IPv4Network('192.168.0.1/24').is_address_included(IPv4Address('192.168.1.5'))
+        False
+        '''
+        if not isinstance(address, IPv4Address):
+            raise TypeError('address argument must an IPv4Address object')
+        
+        netaddr_self_bin = self.get_netinfo()['network'].__binary__()
+        netaddr_address_bin = address.__binary__()[:self._cidr] + '0' * (32 - self._cidr)
+
+        if netaddr_address_bin == netaddr_self_bin:
+            return True
+        return False
     
     def __str__(self):
         '''
