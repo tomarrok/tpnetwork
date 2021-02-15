@@ -76,7 +76,7 @@ class IPv4Address:
         :rtype: tuple
 
         :Example:
-        >>> IPv4Address('192.168.0.1').__str__()
+        >>> IPv4Address('192.168.0.1').__octets__()
         (192, 168, 0, 1)
         '''
         return tuple(map(int, self._address.split('.')))
@@ -89,7 +89,7 @@ class IPv4Address:
         :rtype: str
 
         :Example:
-        >>> IPv4Address('192.168.0.1').__str__()
+        >>> IPv4Address('192.168.0.1').__binary__()
         '11000000101010000000000000000001'
         '''
         return ''.join([ '0'*(8-len(bin(octet)[2:])) + bin(octet)[2:] for octet in self.__octets__() ])
