@@ -1,0 +1,9 @@
+__pycache__/
+__pycache__/*
+test.py
+dist/
+build/
+tpnetwork.egg-info/
+dist/*
+build/*
+tpnetwork.egg-info/*
