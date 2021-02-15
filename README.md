@@ -5,7 +5,7 @@
 ![PyPI - Status](https://img.shields.io/pypi/status/tpnetwork)
 ![PyPI - Format](https://img.shields.io/pypi/format/tpnetwork)
 [![Build Status](https://dev.azure.com/thomaspajon/tpnetwork/_apis/build/status/tomarrok.tpnetwork?branchName=main)](https://dev.azure.com/thomaspajon/tpnetwork/_build/latest?definitionId=2&branchName=main)
-![PyPI - License](https://img.shields.io/pypi/l/tpnetwork)
+[![PyPI - License](https://img.shields.io/pypi/l/tpnetwork)](https://github.com/tomarrok/tpnetwork/blob/main/LICENSE)
 
 A python network module
 
