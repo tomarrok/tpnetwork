@@ -7,3 +7,4 @@ tpnetwork.egg-info/
 dist/*
 build/*
 tpnetwork.egg-info/*
+.gitignore
