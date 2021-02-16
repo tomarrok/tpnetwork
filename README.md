@@ -15,7 +15,7 @@ More information on [this page](https://github.com/tomarrok/tpnetwork/wiki).
 
 ### sub-modules
 - network (main)
-- fortinet : <em>In progress</em>
+- fortinet : <em>In progress (Available in the last alpha version - v1.2.0a2)</em>
 
 ## Install
 ```

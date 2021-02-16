@@ -23,5 +23,6 @@ setuptools.setup(
         'Natural Language :: English'
     ],
     packages=setuptools.find_packages(),
+    install_requires=['dpath'],
     python_requires='>=3.5'
 )
