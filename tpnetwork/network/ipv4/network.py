@@ -75,7 +75,7 @@ class IPv4Network:
     
     def get_netinfo(self):
         '''
-        Get IPv4Network network informations
+        Get IPv4Network network information
 
         :return: The network informations
         :return network: The ipv4 network address

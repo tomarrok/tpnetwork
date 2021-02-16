@@ -24,7 +24,7 @@ pip3 install tpnetwork
 ```
 
 ### Requires:
-- Python : `v3.5+`
+- Python : `v3.7+`
 
 ## Author
 - [Thomas Pajon](mailto:th.pajon45@gmail.com)
