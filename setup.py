@@ -15,7 +15,7 @@ setuptools.setup(
     url='https://github.com/tomarrok/tpnetwork',
     classifiers=[
         'Programming Language :: Python :: 3.7',
-        'Development Status :: 5 - Production/Stable',
+        'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'Topic :: System :: Networking',
         'License :: OSI Approved :: MIT License',
