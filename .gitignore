@@ -7,3 +7,5 @@ tpnetwork.egg-info/
 dist/*
 build/*
 tpnetwork.egg-info/*
+data/
+data/*
