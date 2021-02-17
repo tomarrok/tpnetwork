@@ -135,7 +135,7 @@ class IPv4Network:
         :rtype: str
 
         :Example:
-        >>> IPv4Address('192.168.0.1/255.255.255.0').__str__()
+        >>> IPv4Network('192.168.0.1/255.255.255.0').__str__()
         '192.168.0.1/24'
         '''
         return self._address + '/' + str(self._cidr)
@@ -152,7 +152,7 @@ class IPv4Network:
         :rtype 1: tuple
 
         :Example:
-        >>> IPv4Address('192.168.0.1/24').__octets__()
+        >>> IPv4Network('192.168.0.1/24').__octets__()
         ((192, 168, 0, 1), (255, 255, 255, 0))
         '''
         return (tuple(map(int, self._address.split('.'))), tuple(map(int, self._netmask.split('.'))))
@@ -169,7 +169,7 @@ class IPv4Network:
         :rtype 1: str
 
         :Example:
-        >>> IPv4Address('192.168.0.1/24').__binary__()
+        >>> IPv4Network('192.168.0.1/24').__binary__()
         ('11000000101010000000000000000001', '11111111111111111111111100000000')
         '''
         return (
